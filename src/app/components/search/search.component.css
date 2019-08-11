@@ -1,0 +1,125 @@
+*{
+    text-transform: capitalize;
+    color: #000;
+}
+.logo{
+    margin: 10px auto;
+    width: 40%;
+    font-size:100px;
+    font-weight: 900;
+    color: #e91e63;
+    text-align: center;
+}
+h2{
+    color: #e91e63;
+    margin : 15px auto;
+    padding: 20px;
+    width: 50%;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+input{
+    width: 50% !important ;
+}
+table{
+    width: 70%;
+    margin: 50px auto;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+table, th, td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 5px;
+    text-align: center;
+  }
+th{
+    color: #e91e63;
+}
+.name{
+    font-weight: 900;
+    color: #e91e63;
+}
+a{
+    color: #fff !important ;
+    cursor: pointer;
+  }
+img {
+    width: 40%;
+    height:40%;
+    border-radius: 70%;
+    -webkit-border-radius: 70%;
+    -moz-border-radius: 70%;
+    -ms-border-radius: 70%;
+    -o-border-radius: 70%;
+}
+.up{
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #e91e63;
+    color: #fff;
+    font-size: 18px;
+   text-align: center;
+    cursor: pointer;
+    border-radius: 60%;
+    -webkit-border-radius: 60%;
+    -moz-border-radius: 60%;
+    -ms-border-radius: 60%;
+    -o-border-radius: 60%;
+    display: none;
+}
+
+/*Responsive*/
+@media (max-width : 990px) {
+    h2 {
+      width: 100%;
+      margin: 20px auto;
+      font-size: 20px;
+    }
+    input{
+        width: 80% !important ;
+    }
+    table{
+      max-width: 90% !important;
+      margin: 30px auto;
+      font-size: 16px;
+    }
+    a{
+        width: 70%;
+        font-size: 15px;
+      }
+    .name{
+        font-weight: 600;
+        max-width: 80%;
+    }
+    button{
+      width: 50%;
+      margin: 3% 26% !important ;
+    }
+    button:focus{
+      outline: none;
+    }
+  }
+  @media (max-width :555px) {
+    h2 {
+      width: 100%;
+      margin: 20px auto;
+      font-size: 18px;
+    }
+    table{
+      max-width: 70% !important;
+      margin: 30px auto;
+      font-size: 10px;
+    }
+    img {
+      width: 60%;
+      height:40%;
+}
+    a{
+      width: 70%;
+      font-size: 12px;
+    }
+  }

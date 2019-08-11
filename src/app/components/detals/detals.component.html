@@ -1,0 +1,41 @@
+
+<div class="container">
+<h2>Repo Details</h2>
+  <table>
+        <tr>
+          <th>Repo Name :</th>
+          <td class="name">{{view.full_name}}</td>
+        </tr>
+        <tr>
+          <th>Description :</th>
+          <td>{{view.description}}</td>
+        </tr>
+        <tr>
+          <th>Language : </th>
+          <td>{{view.language}}</td>
+        </tr>
+        <tr>
+          <th>Date : </th>
+          <td>{{view.created_at}}</td>
+        </tr>
+        <tr>
+          <th>Stargazers Count : </th>
+          <td>{{view.stargazers_count}}</td>
+        </tr>
+        <tr>
+          <th>Size : </th>
+          <td>{{view.size}}</td>
+        </tr>
+        <tr>
+          <th>Owner : </th>
+          <td><img [src]="view.owner.avatar_url"></td>
+        </tr>
+        <tr>
+          <th>on Github : </th>
+          <td> <a class="btn btn-dark" [href]="view.html_url">See On Github !</a> </td>
+        </tr>
+    </table>
+
+    <button class="btn btn-danger" (click) = "back()"> <i class="fas fa-undo-alt"></i> Back to search !</button>
+    
+  </div>

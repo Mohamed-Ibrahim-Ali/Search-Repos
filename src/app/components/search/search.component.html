@@ -1,0 +1,38 @@
+<div class="myPage">
+
+<div class="container">
+
+   <div class="logo"> <i class="fab fa-github git"></i> </div>
+
+  <h2> <i class="fas fa-search mx-2"></i>  Find Any Public Repo Here</h2>
+
+  <div class="form-group my-5">
+    <input type="text" [(ngModel)] = 'term' class="form-control m-auto" placeholder="Search Repos">
+  </div>
+ <table *ngFor = "let x of Data| search:term">
+        <tr>
+          <th>Repo Name :</th>
+          <td class="name">{{x.full_name}}</td>
+        </tr>
+        <tr>
+          <th>Description :</th>
+          <td>{{x.description}}</td>
+        </tr>
+        <tr>
+          <th>Owner : </th>
+          <td><img [src] = "x.owner.avatar_url" ></td>
+        </tr>
+        <tr>
+            <th>Stargazers Count : </th>
+            <td>{{x.stargazers_count}}</td>
+          </tr>
+          <tr>
+              <th>See Details : </th>
+              <td><a class="btn btn-danger" (click)= "view(x.id)">See Details !</a></td>
+            </tr>
+  </table>  
+
+
+<div class="up"> <i class="fas fa-angle-up"></i> </div>
+
+</div>
